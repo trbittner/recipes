@@ -62,3 +62,6 @@ $gradient-top-left: linear-gradient(225deg, #ffffffff, #81f4e1ff, #56cbf9ff, #ff
 $gradient-bottom-left: linear-gradient(315deg, #ffffffff, #81f4e1ff, #56cbf9ff, #ff729fff, #d3c4d1ff);
 $gradient-radial: radial-gradient(#ffffffff, #81f4e1ff, #56cbf9ff, #ff729fff, #d3c4d1ff);
 ```
+## Add photo attribution
+* [Rumman Amin from Unsplash](https://unsplash.com/photos/nKs-oXRGGEg)
+* [Footer CSS](https://www.w3schools.com/howto/howto_css_fixed_footer.asp)
