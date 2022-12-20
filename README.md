@@ -69,3 +69,6 @@ $gradient-radial: radial-gradient(#ffffffff, #81f4e1ff, #56cbf9ff, #ff729fff, #d
  
 ## Clean CSS to match Skeleton, not Jekyll
 * This was easy enough.  I just needed to point the css links in the header to `href` not `src`.
+
+## List 3 recipes
+* Done.  I also added top and bottom margins to the cards to create a better sense of space.
