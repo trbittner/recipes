@@ -27,12 +27,13 @@
   font-size: 30px;
 }
 
-.footer {
-  left: 0;
-  bottom: 0;
-  padding: 15px;
-  background: #d3c4d1ff;
-  color: #777777;
-  text-align: right;
-  font-size: 10px;
+.image-div {
+  position: relative;
+}
+
+.placeholder-image {
+  position: absolute;
+  top:90%;
+  left:78%;
+  color: white;
 }

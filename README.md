@@ -64,4 +64,8 @@ $gradient-radial: radial-gradient(#ffffffff, #81f4e1ff, #56cbf9ff, #ff729fff, #d
 ```
 ## Add photo attribution
 * [Rumman Amin from Unsplash](https://unsplash.com/photos/nKs-oXRGGEg)
-* [Footer CSS](https://www.w3schools.com/howto/howto_css_fixed_footer.asp)
+* ~~[Footer CSS](https://www.w3schools.com/howto/howto_css_fixed_footer.asp)~~
+* Added the attribution to the image itself using [this tutorial](https://www.w3schools.com/css/tryit.asp?filename=trycss_position_absolute).
+ 
+## Clean CSS to match Skeleton, not Jekyll
+* This was easy enough.  I just needed to point the css links in the header to `href` not `src`.
