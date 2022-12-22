@@ -78,4 +78,8 @@ $gradient-radial: radial-gradient(#ffffffff, #81f4e1ff, #56cbf9ff, #ff729fff, #d
  
 ## Templatize Jekyll to allow for recipe publication
 * This took a bit longer than I expected due to some markdown quirks, but I got it going.
-* [This site helped with css classes.](https://digitaldrummerj.me/styling-jekyll-markdown/)
+* ~~[This site helped with css classes.](https://digitaldrummerj.me/styling-jekyll-markdown/)~~
+* I'm handling the content with front matter in the individual recipe pages via YAML.
+It provides more consistency in the layout.
+* [This site](https://yaml-multiline.info/) and [this one](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started)
+helped me with YAML oddities.
