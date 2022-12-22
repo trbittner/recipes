@@ -75,3 +75,7 @@ $gradient-radial: radial-gradient(#ffffffff, #81f4e1ff, #56cbf9ff, #ff729fff, #d
 
 ## List 3 recipes
 * Done.  I also added top and bottom margins to the cards to create a better sense of space.
+ 
+## Templatize Jekyll to allow for recipe publication
+* This took a bit longer than I expected due to some markdown quirks, but I got it going.
+* [This site helped with css classes.](https://digitaldrummerj.me/styling-jekyll-markdown/)
