@@ -10,7 +10,7 @@ individual diner.  I typically lay on 4 slices of turkey, 2 of cheese, and
 enough pickles and mustard to stretch the length of the sandwich.
 
 {:.servings}
-Serves 1
+**Serves** 1
 
 {:.title}
 Ingredients

@@ -33,6 +33,10 @@
   position: relative;
 }
 
+.image-div > img {
+  width: 100%;
+}
+
 .placeholder-image {
   position: absolute;
   top:90%;
