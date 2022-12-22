@@ -1,3 +1,6 @@
+[This is my original site design](https://toddbittner.gitlab.io/).  I like it, but I also like the card format as well.
+I'll have to see if there's some compromise design that satisfies both of my design cravings.
+
 # Tasks
 ## Set up the environment
 * Install [jekyll](http://jekyllrb.com/) as per the site instructions (I'm surprised the site isn't https).

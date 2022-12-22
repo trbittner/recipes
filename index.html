@@ -12,6 +12,13 @@ title: home
                 <h1>Todd's Bistro</h1>
                 <p>A collection of easy-to-make recipes that are near and dear to my heart.</p>
             </div>
+            <ul>
+            {% for recipe in site.recipes %}
+                <li>{{ recipe.name }}</li>
+                <li>{{ recipe.servings }}</li>
+                <li>{{ recipe.rating }}</li>
+            {% endfor %}
+            </ul>
             <div class="card">
                 <div class="image-div">
                     <img src="assets/images/recipe-placeholder.jpg" alt="Recipe Placeholder" style="width:100%">
