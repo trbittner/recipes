@@ -13,7 +13,7 @@ title: home
                 <p>A collection of easy-to-make recipes that are near and dear to my heart.</p>
             </div>
             {% for recipe in site.recipes %}
-            <div class="card">
+            <div class="card {{ recipe.tags | join: ' '}}">
                 <div class="image-div">
                     <img src="assets/images/recipe-placeholder.jpg" alt="Recipe Placeholder">
                     <a class="placeholder-image" href="https://unsplash.com/photos/nKs-oXRGGEg">Rumman Amin</a>
