@@ -24,4 +24,5 @@ instructions:
     - Using a blender, immersion blender, or food processor puree the ingredients until smooth
     - Replace ingredients in the pot and adjust the heat to medium low
     - Add queso fresco and cream. Stir until heated through (3-5 minutes).  The cheese should not melt
+tags: indian vegetarian
 ---

@@ -18,4 +18,9 @@
         <li>{{ instruction }}</li>
     {% endfor %}
     </ol>
+    <div class="tags">
+    {% for tag in recipe.tags %}
+        <button class="tag-button">{{ tag }}</button>
+    {% endfor %}
+    </div>
 </div>

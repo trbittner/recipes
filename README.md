@@ -83,3 +83,9 @@ $gradient-radial: radial-gradient(#ffffffff, #81f4e1ff, #56cbf9ff, #ff729fff, #d
 It provides more consistency in the layout.
 * [This site](https://yaml-multiline.info/) and [this one](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started)
 helped me with YAML oddities.
+
+## Add tags for recipes
+* This is going to [take](https://www.w3schools.com/howto/howto_js_filter_elements.asp) some javascript if we want to keep the site static.
+* We need to make sure we [join tags](https://shopify.github.io/liquid/filters/join/) appropriately in the div class property.
+* [This cheatsheet](https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets/jekyll/liquid/filters.html) may also come in handy.
+* [Another shopify API reference](https://shopify.dev/api/liquid/).

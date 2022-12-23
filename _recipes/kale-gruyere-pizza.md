@@ -21,4 +21,5 @@ instructions:
     - Top uniformly with mozzarella slices
     - Bake for an additional 8 minutes until the mozzarella begins to brown slightly
     - Remove from oven and let sit 5 minutes before slicing to serve.
+tags: pizza vegetarian
 ---

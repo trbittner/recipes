@@ -13,7 +13,7 @@
   margin-top: 15px;
   margin-bottom: 10px;
   text-align: left;
-  padding: 3px 10px;
+  padding: 10px;
 }
 
 .title {
@@ -41,5 +41,21 @@
   position: absolute;
   top:90%;
   left:78%;
+  color: white;
+}
+
+.tags {
+  border-top-style: inset;
+  border-width: 1px;
+  padding-top: 5px;
+  text-align: right;
+  vertical-align: text-top;
+}
+
+.tag-button {
+  height: 25px;
+  line-height: 25px;
+  padding: 1px 5px;
+  background-color: #ff729fff;
   color: white;
 }
