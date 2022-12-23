@@ -12,28 +12,9 @@ title: home
                 <h1>Todd's Bistro</h1>
                 <p>A collection of easy-to-make recipes that are near and dear to my heart.</p>
             </div>
-            {% for recipe in site.recipes %}
-            <div class="card {{ recipe.tags | join: ' '}}">
-                <div class="image-div">
-                    <img src="assets/images/recipe-placeholder.jpg" alt="Recipe Placeholder">
-                    <a class="placeholder-image" href="https://unsplash.com/photos/nKs-oXRGGEg">Rumman Amin</a>
-                </div>                
-                <h4>{{ recipe.name }}</h4>
-                <p>{{ recipe.description }}</p>
-                <p class="servings">{{ recipe.servings }}</p>
-                <p class="title">Ingredients</p>
-                <ul>
-                {% for ingredient in recipe.ingredients %}
-                    <li>{{ ingredient }}</li>
-                {% endfor %}
-                </ul>
-                <p class="title">Instructions</p>
-                <ol>
-                {% for instruction in recipe.instructions %}
-                    <li>{{ instruction }}</li>
-                {% endfor %}
-                </ol>
-            </div>
+            {% for recipe-file in site.recipes %}
+                {% assign recipe = recipe-file %}
+                {% include recipe.html %}
             {% endfor %}
         </div>
     </div>
