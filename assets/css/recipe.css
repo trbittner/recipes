@@ -6,6 +6,19 @@
 --languid-lavender: #d3c4d1ff;
 */
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%
+  
+  /* Equal to the height of the footer */
+  /* Also accounts for potential margin-bottom of the last child */
+  margin-bottom: -50px;
+}
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 480px;
@@ -52,10 +65,22 @@
   vertical-align: text-top;
 }
 
-.tag-button {
+.tag-button,.clear-tags {
   height: 25px;
   line-height: 25px;
   padding: 1px 5px;
   background-color: #ff729fff;
   color: white;
+}
+
+.footer {
+  position: sticky;
+  background: #d3c4d1ff;
+  height: 32px;
+  color: white;
+  padding-top: 5px;
+  padding-right: 10px;
+  bottom: 0;
+  text-align: right;
+  vertical-align: text-top;
 }

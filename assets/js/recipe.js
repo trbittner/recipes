@@ -2,7 +2,8 @@
 let vizCards = new Set()
 let invizCards = new Set()
 
-let hasInvizCards = false
+let footer = document.getElementsByClassName("footer")[0]
+footer.style.display = 'none'
 
 let splitDivsByTag = (tagName) => {
     let cards = document.getElementsByClassName("card")
@@ -14,18 +15,9 @@ let splitDivsByTag = (tagName) => {
         else {
             card.style.display = 'none'
             invizCards.add(card)
+            footer.style.display = 'block'
         }
     }
-    
-    if (invizCards.length !== 0) {
-        hasInvizCards = true
-    }
-    else {
-        hasInvizCards = false
-    }
-    
-    console.log(vizCards)
-    console.log(invizCards)
 }
 
 //Add event listeners for filters
@@ -36,17 +28,11 @@ for (let tagBtn of tagBtns) {
     })   
 }
 
-let clearBtn = document.getElementsByClassName("clear-tags")
+let clearBtn = document.getElementsByClassName("clear-tags")[0]
 clearBtn.addEventListener("click", function() {
     for (let card of invizCards) {
         card.style.display = 'block'
     }
     vizCards = invizCards = new Set()
-    hasInvizCards = false
+    footer.style.display = 'none'
 })
-
-//element.style.visibility = 'hidden'
-//element.style.visibility = 'visible'
-
-// The above doesn't remove the element from the flow.
-//element.style.display='none'

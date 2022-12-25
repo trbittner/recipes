@@ -85,7 +85,9 @@ It provides more consistency in the layout.
 helped me with YAML oddities.
 
 ## Add tags for recipes
-* This is going to [take](https://www.w3schools.com/howto/howto_js_filter_elements.asp) some javascript if we want to keep the site static.
+* ~~This is going to [take](https://www.w3schools.com/howto/howto_js_filter_elements.asp) some javascript if we want to keep the site static.~~
 * We need to make sure we [join tags](https://shopify.github.io/liquid/filters/join/) appropriately in the div class property.
 * [This cheatsheet](https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets/jekyll/liquid/filters.html) may also come in handy.
 * [Another shopify API reference](https://shopify.dev/api/liquid/).
+* Ultimately, I went with custom function as written.  When hiding elements, it's important to keep in mind the difference between
+* `element.style.display` and `element.style.visibility`.  The former removes the element from the flow.  The latter just hides it.
