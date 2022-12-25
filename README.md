@@ -89,5 +89,7 @@ helped me with YAML oddities.
 * We need to make sure we [join tags](https://shopify.github.io/liquid/filters/join/) appropriately in the div class property.
 * [This cheatsheet](https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets/jekyll/liquid/filters.html) may also come in handy.
 * [Another shopify API reference](https://shopify.dev/api/liquid/).
-* Ultimately, I went with custom function as written.  When hiding elements, it's important to keep in mind the difference between
-* `element.style.display` and `element.style.visibility`.  The former removes the element from the flow.  The latter just hides it.
+* Ultimately, I went with a custom function as written.  When hiding elements, it's important to keep in mind the difference between
+element.style.display` and `element.style.visibility`.  The former removes the element from the flow.  The latter just hides it.
+* Writing the javascript, as usual, taught me something new.  I was unaware of the `sticky` element in CSS.  I also learned about JS use
+sets.
