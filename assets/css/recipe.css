@@ -53,7 +53,7 @@ html, body {
 .placeholder-image {
   position: absolute;
   top:90%;
-  left:78%;
+  right:15px;
   color: white;
 }
 
