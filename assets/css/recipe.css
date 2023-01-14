@@ -32,6 +32,7 @@ html, body {
   background: #d3c4d1ff;
   color: white;
   font-size: 30px;
+  overflow: hidden;
 }
 
 .image-div {
@@ -79,4 +80,8 @@ html, body {
   position: absolute;
   top: 5px;
   right: 15px;
+}
+
+#recipeLinks {
+  display:none;
 }

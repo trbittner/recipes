@@ -36,3 +36,13 @@ clearBtn.addEventListener("click", function() {
     vizCards = invizCards = new Set()
     footer.style.display = 'none'
 })
+
+let toggleMenu = () => {
+    let recipeLinks = document.getElementById("recipeLinks");
+    if (recipeLinks.style.display === "block") {
+        recipeLinks.style.display = "none"
+    }
+    else {
+        recipeLinks.style.display = "block" 
+    }
+}

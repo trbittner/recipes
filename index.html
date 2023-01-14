@@ -11,9 +11,14 @@ title: home
             <div class="header">
                 <h1>Todd's Bistro</h1>
                 <p>A collection of easy-to-make recipes that are near and dear to my heart.</p>
-                <a href="javascript:void(0);" class="menu" onclick="">
+                <a href="javascript:void(0);" class="menu" onclick="toggleMenu()">
                     <i class="fa fa-bars"></i>
                 </a>
+                <div id="recipeLinks">
+                    <a href = "#news">News</a>
+                    <a href = "#contact">Contact</a>
+                    <a href = "#about">About</a>
+                </div>
             </div>
             {% for recipe-file in site.recipes %}
                 {% assign recipe = recipe-file %}
