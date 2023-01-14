@@ -93,3 +93,6 @@ helped me with YAML oddities.
 element.style.display` and `element.style.visibility`.  The former removes the element from the flow.  The latter just hides it.
 * Writing the javascript, as usual, taught me something new.  I was unaware of the `sticky` element in CSS.  I also learned about JS use
 sets.
+
+## Add navigation functionality for the site
+* Most of the tricks here should be encapsulated in the code, but [one site](https://shopify.github.io/liquid/) was particularly helpful.

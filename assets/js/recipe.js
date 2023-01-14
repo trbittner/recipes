@@ -38,7 +38,7 @@ clearBtn.addEventListener("click", function() {
 })
 
 let toggleMenu = () => {
-    let recipeLinks = document.getElementById("recipeLinks");
+    let recipeLinks = document.getElementById("recipe-links");
     if (recipeLinks.style.display === "block") {
         recipeLinks.style.display = "none"
     }
