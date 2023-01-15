@@ -14,7 +14,8 @@
     {% assign all_tags = all_tags | uniq | sort_natural %}
     {% for tag in all_tags %}
     <div class="recipe-link">
-        <a href="#">{{ tag | capitalize }}</a>
+        <a href="javascript:void(0);" 
+            onclick="selectMenuItem('{{ tag }}')">{{ tag | capitalize }}</a>
     </div>
     {% endfor %}
 </div>

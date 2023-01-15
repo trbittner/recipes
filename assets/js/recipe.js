@@ -20,6 +20,14 @@ let splitDivsByTag = (tagName) => {
     }
 }
 
+let clearTags = () => {
+    for (let card of invizCards) {
+        card.style.display = 'block'
+    }
+    vizCards = invizCards = new Set()
+    footer.style.display = 'none'    
+}
+
 //Add event listeners for filters
 let tagBtns = document.getElementsByClassName("tag-button")
 for (let tagBtn of tagBtns) {
@@ -29,13 +37,7 @@ for (let tagBtn of tagBtns) {
 }
 
 let clearBtn = document.getElementsByClassName("clear-tags")[0]
-clearBtn.addEventListener("click", function() {
-    for (let card of invizCards) {
-        card.style.display = 'block'
-    }
-    vizCards = invizCards = new Set()
-    footer.style.display = 'none'
-})
+clearBtn.addEventListener("click", function() {clearTags()})
 
 let toggleMenu = () => {
     let recipeLinks = document.getElementById("recipe-links");
@@ -45,4 +47,10 @@ let toggleMenu = () => {
     else {
         recipeLinks.style.display = "block" 
     }
+}
+
+let selectMenuItem = (tagName) => {
+    clearTags()
+    splitDivsByTag(tagName)
+    toggleMenu()
 }

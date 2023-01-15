@@ -93,6 +93,7 @@ html, body {
   right: 10px;
   z-index: +1;
   font-size: 15px;
+  padding-bottom: 10px;
 }
 
 .recipe-link {
