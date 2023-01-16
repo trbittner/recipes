@@ -7,11 +7,7 @@
             <i class="fa fa-times"></i>
         </a>
     </div>
-    {% assign all_tags = site.recipes[0].tags %}
-    {% for recipe in site.recipes %}
-        {% assign all_tags = all_tags | concat: recipe.tags %}
-    {% endfor %}
-    {% assign all_tags = all_tags | uniq | sort_natural %}
+    {% assign all_tags = site.recipes | map: "tags" | uniq | sort_natural %}
     {% for tag in all_tags %}
     <div class="recipe-link">
         <a href="javascript:void(0);" 
