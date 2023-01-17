@@ -9,9 +9,15 @@ title: home
     <div class="row">
         <div class="twelve columns">
             <div class="header">
+
                 {% include menu.html %}
                 <h1>Todd's Bistro</h1>
                 <p>A collection of easy-to-make recipes that are near and dear to my heart.</p>
+            </div>
+            <div class="search-container">
+                <input type='text' placeholder="Search..." name="search" onKeyUp="showRecipes(this.value)"></input>
+                <button class='search-button'><i class='fa fa-search'></i></button>
+                <div id="result"></div>
             </div>
             {% for recipe-file in site.recipes %}
                 {% assign recipe = recipe-file %}
@@ -22,4 +28,12 @@ title: home
         </div>
         </div>
     </div>
+</div>
+
+<!-- Used to construct the recipe list at jekyll compile time for search purposes. -->
+<ul id="recipe-list">
+    {% assign recipe-list = site.recipes | map: "name" | sort_natural %}
+    {% for name in recipe-list %}
+    <li class="recipe-name" id="{{ name }}">{{ name }}</li>
+    {% endfor %}
 </div>

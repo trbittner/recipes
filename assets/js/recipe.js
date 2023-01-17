@@ -1,3 +1,13 @@
+//Populate the recipe list on load
+let recipeList = []
+const domRecipeList = document.getElementsByClassName("recipe-name")
+
+for (const li of domRecipeList) {
+    recipeList.push(li.id)
+}
+
+console.log(recipeList)
+
 //Making this global to the site will ease state maintenance a bit.
 let vizCards = new Set()
 let invizCards = new Set()
@@ -53,4 +63,26 @@ let selectMenuItem = (tagName) => {
     clearTags()
     splitDivsByTag(tagName)
     toggleMenu()
+}
+
+let autocompleteMatch = (input) => {
+    if (input === '') {
+        return []
+    }
+    
+    let reg = RegExp(input)
+    return recipe_list.filter(function(term) {
+        if (term.match(reg)) {
+            return term
+        }
+    })
+}
+
+let showRecipes = (val) => {
+    result = document.getElementById("result")
+    
+    result.innerHTML = ''
+    let list = ''
+    let terms = autocompleteMatch(val)
+    console.log(terms)
 }
