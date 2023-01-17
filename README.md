@@ -96,3 +96,6 @@ sets.
 
 ## Add navigation functionality for the site
 * Most of the tricks here should be encapsulated in the code, but [one site](https://shopify.github.io/liquid/) was particularly helpful.
+
+## Add search
+* Using [this site](https://www.algolia.com/blog/engineering/how-to-implement-autocomplete-with-javascript-on-your-website/) for the search autocomplete magic.

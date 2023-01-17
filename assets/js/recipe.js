@@ -6,8 +6,6 @@ for (const li of domRecipeList) {
     recipeList.push(li.id)
 }
 
-console.log(recipeList)
-
 //Making this global to the site will ease state maintenance a bit.
 let vizCards = new Set()
 let invizCards = new Set()
@@ -70,8 +68,9 @@ let autocompleteMatch = (input) => {
         return []
     }
     
-    let reg = RegExp(input)
-    return recipe_list.filter(function(term) {
+    // "i" means ignore case here.
+    let reg = RegExp(input,"i")
+    return recipeList.filter(function(term) {
         if (term.match(reg)) {
             return term
         }
@@ -84,5 +83,9 @@ let showRecipes = (val) => {
     result.innerHTML = ''
     let list = ''
     let terms = autocompleteMatch(val)
-    console.log(terms)
+    for (let i=0; i < terms.length; i++) {
+        list += '<li>' + terms[i] + '</li>'
+    }
+
+    result.innerHTML = '<ul>' + list + '</ul>'
 }
