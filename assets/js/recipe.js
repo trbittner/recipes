@@ -1,4 +1,6 @@
-//Populate the recipe list on load
+/*********************************************/
+/* Populate the existing recipe list on load */
+/*********************************************/
 let recipeList = []
 const domRecipeList = document.getElementsByClassName("recipe-name")
 
@@ -6,6 +8,10 @@ for (const li of domRecipeList) {
     recipeList.push(li.id)
 }
 
+
+/****************************/
+/* Add filter functionality */
+/****************************/
 //Making this global to the site will ease state maintenance a bit.
 let vizCards = new Set()
 let invizCards = new Set()
@@ -63,10 +69,18 @@ let selectMenuItem = (tagName) => {
     toggleMenu()
 }
 
+
+/****************************/
+/* Add search functionality */
+/****************************/
 let autocompleteMatch = (input) => {
+    let result = document.getElementById("search-result")
     if (input === '') {
+        result.style.display = 'none'
         return []
     }
+    
+    result.style.display="block"
     
     // "i" means ignore case here.
     let reg = RegExp(input,"i")
@@ -78,13 +92,13 @@ let autocompleteMatch = (input) => {
 }
 
 let showRecipes = (val) => {
-    result = document.getElementById("result")
+    let result = document.getElementById("search-result")
     
     result.innerHTML = ''
     let list = ''
     let terms = autocompleteMatch(val)
     for (let i=0; i < terms.length; i++) {
-        list += '<li>' + terms[i] + '</li>'
+        list += '<li tabindex="0">' + terms[i] + '</li>'
     }
 
     result.innerHTML = '<ul>' + list + '</ul>'
