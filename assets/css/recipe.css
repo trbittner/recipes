@@ -124,7 +124,7 @@ html, body {
   top:10px;
 }
 
-#search-result {
+#search-results {
   background:black;
   color: white;
   width:250px;
@@ -132,14 +132,14 @@ html, body {
   display: none;
 }
 
-#search-result ul {
+#search-results ul {
   list-style-type: none;
   padding: 0px;
   margin: 3px;
   cursor: pointer;
 }
 
-#search-result ul li:hover {
+#search-results ul li:hover {
   background: #aaa;
 }
 

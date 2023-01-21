@@ -16,8 +16,8 @@ title: Todd's Bistro
             </div>
             <div class="search-container">
                 <i class='fa fa-search fa-lg'></i>
-                <input type='text' placeholder="Search..." id="search" onKeyUp="showRecipes(this.value)"></input>
-                <div id="search-result"></div>
+                <input type='text' placeholder="Search..." id="search-field" onKeyUp="showRecipes(this.value)"></input>
+                <div id="search-results"></div>
             </div>
             {% for recipe-file in site.recipes %}
                 {% assign recipe = recipe-file %}

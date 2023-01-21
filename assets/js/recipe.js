@@ -74,7 +74,7 @@ let selectMenuItem = (tagName) => {
 /* Add search functionality */
 /****************************/
 let autocompleteMatch = (input) => {
-    let result = document.getElementById("search-result")
+    let result = document.getElementById("search-results")
     if (input === '') {
         result.style.display = 'none'
         return []
@@ -92,14 +92,22 @@ let autocompleteMatch = (input) => {
 }
 
 let showRecipes = (val) => {
-    let result = document.getElementById("search-result")
+    let result = document.getElementById("search-results")
     
     result.innerHTML = ''
     let list = ''
     let terms = autocompleteMatch(val)
     for (let i=0; i < terms.length; i++) {
-        list += '<li tabindex="0">' + terms[i] + '</li>'
+        list += '<li>' + terms[i] + '</li>'
     }
 
-    result.innerHTML = '<ul>' + list + '</ul>'
+    result.innerHTML = '<ul id="search-result-lists">' + list + '</ul>'
+    
+    document.getElementById("search-result-lists").addEventListener("click", function(e) {
+        if (e.target && e.target.nodeName === "LI") {
+            let searchField = document.getElementById("search-field")
+            searchField.value = e.target.innerHTML
+            console.log(e.target.innerHTML)
+        }
+    })
 }
