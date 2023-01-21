@@ -118,12 +118,6 @@ html, body {
   height:40px;
 }
 
-.fa-search {
-  position: absolute;
-  right: 5px;
-  top:10px;
-}
-
 #search-results {
   background:black;
   color: white;
