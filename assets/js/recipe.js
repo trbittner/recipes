@@ -19,7 +19,7 @@ let invizCards = new Set()
 let footer = document.getElementsByClassName("footer")[0]
 footer.style.display = 'none'
 
-let splitDivsByTag = (tagName) => {
+let splitCardsByTag = (tagName) => {
     let cards = document.getElementsByClassName("card")
     
     for (let card of cards) {
@@ -34,7 +34,22 @@ let splitDivsByTag = (tagName) => {
     }
 }
 
-let clearTags = () => {
+let splitCardsById = (id) => {
+    let cards = document.getElementsByClassName("card")
+    
+    for (let card of cards) {
+        if (card.id === id) {
+            vizCards.add(card)
+        }
+        else {
+            card.style.display = 'none'
+            invizCards.add(card)
+            footer.style.display = 'block'
+        }
+    }
+}
+
+let clearFilters = () => {
     for (let card of invizCards) {
         card.style.display = 'block'
     }
@@ -46,12 +61,12 @@ let clearTags = () => {
 let tagBtns = document.getElementsByClassName("tag-button")
 for (let tagBtn of tagBtns) {
     tagBtn.addEventListener("click",function() {
-        splitDivsByTag(tagBtn.innerHTML)
+        splitCaBrdsyTag(tagBtn.innerHTML)
     })   
 }
 
 let clearBtn = document.getElementsByClassName("clear-tags")[0]
-clearBtn.addEventListener("click", function() {clearTags()})
+clearBtn.addEventListener("click", function() {clearFilters()})
 
 let toggleMenu = () => {
     let recipeLinks = document.getElementById("recipe-links");
@@ -64,8 +79,8 @@ let toggleMenu = () => {
 }
 
 let selectMenuItem = (tagName) => {
-    clearTags()
-    splitDivsByTag(tagName)
+    clearFilters()
+    splitCaBrdsyTag(tagName)
     toggleMenu()
 }
 
@@ -105,9 +120,11 @@ let showRecipes = (val) => {
     
     document.getElementById("search-result-lists").addEventListener("click", function(e) {
         if (e.target && e.target.nodeName === "LI") {
+            clearFilters()
+            splitCardsById(e.target.innerHTML)
             let searchField = document.getElementById("search-field")
-            searchField.value = e.target.innerHTML
-            console.log(e.target.innerHTML)
+            searchField.value = ''
+            result.style.display = 'none'
         }
     })
 }
