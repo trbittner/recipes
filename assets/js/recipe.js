@@ -95,8 +95,6 @@ let autocompleteMatch = (input) => {
         return []
     }
     
-    result.style.display="block"
-    
     // "i" means ignore case here.
     let reg = RegExp(input,"i")
     return recipeList.filter(function(term) {
@@ -107,11 +105,20 @@ let autocompleteMatch = (input) => {
 }
 
 let showRecipes = (val) => {
+    // If we've got nothing, do nothing
+    let terms = autocompleteMatch(val)
     let result = document.getElementById("search-results")
+    if (terms.length === 0) {
+        result.style.display = 'none'
+        return
+    }
+    
+
+    result.style.display = 'block'
     
     result.innerHTML = ''
     let list = ''
-    let terms = autocompleteMatch(val)
+
     for (let i=0; i < terms.length; i++) {
         list += '<li>' + terms[i] + '</li>'
     }
