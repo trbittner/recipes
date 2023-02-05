@@ -6,6 +6,8 @@
 --languid-lavender: #d3c4d1ff;
 */
 
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+
 html, body {
   height: 100%;
   margin: 0;
@@ -139,4 +141,25 @@ html, body {
 
 #recipe-list {
   display: none; 
+}
+
+.row {
+  padding:50px;  
+}
+
+.cardstock {
+  /* #fbfaf2 == 'chiffon' */
+  background-color: #fbfaf2; 
+  font-family: 'Great Vibes',cursive;
+  font-size: 16pt;
+}
+
+.border-test {
+  border: solid;
+  border-width: 2px;
+  border-color: gold;
+  outline: solid;
+  outline-color: gold;
+  outline-width: 6px;
+  outline-offset: -20px;
 }
