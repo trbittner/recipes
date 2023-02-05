@@ -16,6 +16,12 @@ title: Prototype
                 <h4>Thursday - Sandwiches</h4>
                 <h4>Friday - Pasta</h4>
                 <h4>Saturday - Asian and Middle Eastern Inspired Cuisine</h4>
+                {% assign saturday_recipes = site.recipes | where: 'day','saturday' %}
+                <ul class='recipe-list'>
+                {% for recipe in saturday_recipes %}
+                    <li><a href='#'>{{ recipe.name }}</li></a>
+                {% endfor %}
+                </ul>
                 <h4>Sunday - Fine Dining</h4>
             </div>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porttitor iaculis luctus. Nunc sodales sagittis hendrerit. Etiam gravida aliquet gravida. Duis semper purus vitae est fermentum efficitur. Vivamus in sapien lorem. Nam turpis turpis, egestas vitae libero et, gravida mattis dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc faucibus augue ut mi efficitur maximus. Donec posuere massa velit, vitae mattis ex faucibus ac.

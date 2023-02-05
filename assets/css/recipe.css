@@ -165,3 +165,23 @@ html, body {
 .menu-header {
   text-align: center;
 }
+
+.recipe-list a:link {
+  text-decoration: none;
+  color: blue;
+}
+
+.recipe-list a:visited {
+  text-decoration: none;
+  color: blue;
+}
+
+.recipe-list a:hover {
+  text-decoration: none;
+  color: gold;
+}
+
+.recipe-list a:active {
+  text-decoration: none;
+  color: blue;
+}
