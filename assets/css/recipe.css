@@ -152,9 +152,7 @@ html, body {
   background-color: #fbfaf2; 
   font-family: 'Great Vibes',cursive;
   font-size: 16pt;
-}
-
-.border-test {
+  
   border: solid;
   border-width: 2px;
   border-color: gold;
@@ -162,4 +160,8 @@ html, body {
   outline-color: gold;
   outline-width: 6px;
   outline-offset: -20px;
+}
+
+.menu-header {
+  text-align: center;
 }
