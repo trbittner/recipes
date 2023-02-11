@@ -4,9 +4,12 @@
         <meta charset = "utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ page.title }}</title>
-        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/normalize.css">
-        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
-        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/skeleton.css">
+        {% if jekyll.environment == 'development' %}
+            <link rel="stylesheet" href="/assets/css/normalize.css">
+            <link rel="stylesheet" href="/assets/css/main.css">
+            <link rel="stylesheet" href="/assets/css/skeleton.css">
+        {% else %}
+        {% endif %}
     </head>    
     <body>
         <div class='container cardstock'>

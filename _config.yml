@@ -39,6 +39,7 @@ plugins:
 collections:
   recipes:
     output: true
+    permalink: /:path/
     
 defaults:
   -
