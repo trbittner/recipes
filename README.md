@@ -109,3 +109,6 @@ I could start doing so with the `tabindex` property in CSS.
 * GH Pages gits needlessly confused with subdirectory magic.
     * [This link](https://stackoverflow.com/questions/24469617/how-do-i-specify-a-custom-url-path-for-a-jekyll-collection) and
     [this link](https://jekyllrb.com/docs/permalinks/) helped greatly.
+* Straightening out relative links for subdirectories that are semi-deployed was extremely difficult.  Ultimately I was
+able to get it working with the introduction of a `prefix:` property to `_config.yml` and the use of the collection's 
+`slug` property.  Anything else seemed to introduce to much recursion in the collection path or too little.
