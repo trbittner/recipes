@@ -37,17 +37,18 @@ plugins:
   - jekyll-feed
   
 collections:
-  foods:
+  recipes:
     output: true
-    permalink: /:collection/:name
     
 defaults:
   -
     scope:
       path: ""
-      type: "foods"
+      type: "recipes"
     values:
       layout: "recipe"
+      
+prefix: 'recipes'
 
 # Exclude from processing.
 # The following items will not be processed, by default.

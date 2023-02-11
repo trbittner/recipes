@@ -6,15 +6,15 @@ title: Todd's Bistro
 <h1>Todd's Bistro</h1>
 <div class='menu-body'>
     <h4>Monday - Pizza</h4>
-    {% assign recipes = site.foods | where: 'day','monday' %}
-    {% include recipe-list.html %}                                
+    {% assign recipes = site.recipes | where: 'day','monday' %}
+    {% include recipe-list.html %}   
     
     <h4>Tuesday - Fish</h4>
-    {% assign recipes = site.foods | where: 'day','tuesday' %}
+    {% assign recipes = site.recipes | where: 'day','tuesday' %}
     {% include recipe-list.html %}                                
     
     <h4>Wednesday - Chicken</h4>
-    {% assign recipes = site.foods | where: 'day','wednesday' %}
+    {% assign recipes = site.recipes | where: 'day','wednesday' %}
     {% include recipe-list.html %}                               
     
     <h4>Thursday - Sandwiches</h4>
