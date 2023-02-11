@@ -1,29 +1,22 @@
 ---
 layout: default
 ---
-<div class="container cardstock">
-    <div class="row">
-        <div class="one column"></div>
-        <div class="ten columns">
-            <h1>{{ page.name }}</h1>
-            <p>{{ page.description }}</p>
-            <p>{{ page.servings }}</p>
-            <h3>Ingredients</h3>
-            <ul>
-            {% for ingredient in page.ingredients %}
-                <li>{{ ingredient }}</li>
-            {% endfor %}
-            </ul>
-            <h3>Instructions</h3>
-            <ol>
-            {% for instruction in page.instructions %}
-                <li>{{ instruction }}</li>
-            {% endfor %}
-            </ol>
-            <div class="return">
-                <a href="/">Back</a>
-            </div>
-        </div>
-        <div class="one column"></div>
-    </div>
+
+<h1>{{ page.name }}</h1>
+<p>{{ page.description }}</p>
+<p>{{ page.servings }}</p>
+<h3>Ingredients</h3>
+<ul>
+{% for ingredient in page.ingredients %}
+    <li>{{ ingredient }}</li>
+{% endfor %}
+</ul>
+<h3>Instructions</h3>
+<ol>
+{% for instruction in page.instructions %}
+    <li>{{ instruction }}</li>
+{% endfor %}
+</ol>
+<div class="return">
+    <a href="/">Back</a>
 </div>
