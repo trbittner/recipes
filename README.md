@@ -106,3 +106,6 @@ I could start doing so with the `tabindex` property in CSS.
 * I've basically invalidated most of the comments above with my re-design.
 * When adding a link to another recipe within the existing recipe MD, a relative `<a>` tag should suffice.
     * e.g. `<a href='my-new-recipe'>My New Recipe</a>`
+* GH Pages gits needlessly confused with subdirectory magic.
+    * [This link](https://stackoverflow.com/questions/24469617/how-do-i-specify-a-custom-url-path-for-a-jekyll-collection) and
+    [this link](https://jekyllrb.com/docs/permalinks/) helped greatly.
