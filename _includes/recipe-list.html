@@ -1,5 +1,5 @@
 <ul class='recipe-list'>
 {% for recipe in recipes %}
-    <li><a href="{{ site.prefix }}{{ recipe.url }}">{{ recipe.name }}</a></li>
+    <li><a href="{{ recipe.url }}">{{ recipe.name }}</a></li>
 {% endfor %}
 </ul>
