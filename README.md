@@ -101,3 +101,8 @@ sets.
 * Using [this site](https://www.algolia.com/blog/engineering/how-to-implement-autocomplete-with-javascript-on-your-website/) for the search autocomplete magic.
 * I'm not currently attempting to tab from the search window to the list of available responses for perusal, but, in theory
 I could start doing so with the `tabindex` property in CSS.
+
+## Refactoring
+* I've basically invalidated most of the comments above with my re-design.
+* When adding a link to another recipe within the existing recipe MD, a relative `<a>` tag should suffice.
+    * e.g. `<a href='my-new-recipe'>My New Recipe</a>`
