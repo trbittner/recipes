@@ -1,38 +1,36 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: default
-title: Todd's Bistro
+title: Prototype
 ---
-<div class="container">
-    <div class="row">
-        <div class="twelve columns">
-            <div class="header">
-
-                {% include menu.html %}
-                <h1>Todd's Bistro</h1>
-                <p>A collection of easy-to-make recipes that are near and dear to my heart.</p>
+<div class='container cardstock'>
+    <div class='row'>
+        <div class='one column'></div>
+        <div class='ten columns'>
+            <h1>Todd's Bistro</h1>
+            <div class='menu-body'>
+                <h4>Monday - Pizza</h4>
+                {% assign recipes = site.recipes | where: 'day','monday' %}
+                {% include recipe-list.html %}                                
+                <h4>Tuesday - Fish</h4>
+                {% assign recipes = site.recipes | where: 'day','tuesday' %}
+                {% include recipe-list.html %}                                
+                <h4>Wednesday - Chicken</h4>
+                {% assign recipes = site.recipes | where: 'day','wednesday' %}
+                {% include recipe-list.html %}                                
+                <h4>Thursday - Sandwiches</h4>
+                {% assign recipes = site.recipes | where: 'day','thursday' %}
+                {% include recipe-list.html %}                                
+                <h4>Friday - Pasta</h4>
+                {% assign recipes = site.recipes | where: 'day','friday' %}
+                {% include recipe-list.html %}                                
+                <h4>Saturday - Asian and Middle Eastern Inspired Cuisine</h4>
+                {% assign recipes = site.recipes | where: 'day','saturday' %}
+                {% include recipe-list.html %}                
+                <h4>Sunday - Fine Dining</h4>
+                {% assign recipes = site.recipes | where: 'day','sunday' %}
+                {% include recipe-list.html %}                
             </div>
-            <div class="search-container">
-                <input type='text' placeholder="Search..." id="search-field" onKeyUp="showRecipes(this.value)"></input>
-                <div id="search-results"></div>
-            </div>
-            {% for recipe-file in site.recipes %}
-                {% assign recipe = recipe-file %}
-                {% include recipe.html %}
-            {% endfor %}
-        <div class="footer">
-            <button class='clear-tags'>clear filters</button>
         </div>
-        </div>
+        <div class='one column'></div>
     </div>
-</div>
-
-<!-- Used to construct the recipe list at jekyll compile time for search purposes. -->
-<ul id="recipe-list">
-    {% assign recipe-list = site.recipes | map: "name" | sort_natural %}
-    {% for name in recipe-list %}
-    <li class="recipe-name" id="{{ name }}">{{ name }}</li>
-    {% endfor %}
 </div>
