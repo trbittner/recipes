@@ -17,4 +17,5 @@ instructions:
         from the heat source (or as close as you can get the steaks)
     - Let the steaks rest 5 minutes prior to serving.
 tags: meat
+day: sunday
 ---

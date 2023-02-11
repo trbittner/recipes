@@ -21,4 +21,5 @@ instructions:
     - Spray or oil the top of the sandwich
     - Bake for 10-12 minutes until the sandwich is warm, the cheese is melted, and the bread has formed a nice browned crust
 tags: poultry sandwiches
+day: thursday
 ---

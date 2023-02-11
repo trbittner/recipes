@@ -39,6 +39,15 @@ plugins:
   
 collections:
   recipes:
+    output: true
+    
+defaults:
+  -
+    scope:
+      path: ""
+      type: "recipes"
+    values:
+      layout: "recipe"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

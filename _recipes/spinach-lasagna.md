@@ -45,4 +45,5 @@ instructions:
     - Broil for an additional 1-2 minutes until cheese is browned and bubbly.
     - Let cool for 15 minutes and serve.
 tags: pasta vegetarian
+day: friday
 ---
