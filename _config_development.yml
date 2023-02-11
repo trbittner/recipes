@@ -1,7 +1,7 @@
-url: https://localhost
+url: ""
 baseurl: ""
 
 collections:
   recipes:
     output: true
-    permalink:
+    permalink: /:collection/:name

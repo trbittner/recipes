@@ -39,7 +39,7 @@ plugins:
 collections:
   recipes:
     output: true
-    permalink: /:collection/:name
+    permalink: /recipes/:collection/:name
     
 defaults:
   -
