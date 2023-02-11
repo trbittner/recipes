@@ -1,0 +1,7 @@
+url: https://localhost
+baseurl: ""
+
+collections:
+  recipes:
+    output: true
+    permalink:
