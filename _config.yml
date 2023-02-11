@@ -37,15 +37,15 @@ plugins:
   - jekyll-feed
   
 collections:
-  recipes:
+  foods:
     output: true
-    permalink: /recipes/:collection/:name
+    permalink: /:collection/:name
     
 defaults:
   -
     scope:
       path: ""
-      type: "recipes"
+      type: "foods"
     values:
       layout: "recipe"
 
